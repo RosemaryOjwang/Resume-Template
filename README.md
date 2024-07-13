@@ -5,7 +5,7 @@
 ## Description
 _Resume Challenge is a step-by-step process of hosting a static resume website on Amazon Simple Storage Service(Amazon S3)._
 
-## AWS Architecture Diagram
+## Architecture Diagram
 ![AWSArchitecture](AWSArchitecture.png)
 
 
