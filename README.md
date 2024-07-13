@@ -74,6 +74,7 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 2. Click on the name of your bucket.
 3. Click on 'Properties'.
 4. Scroll down to 'Static website hosting' section and click on 'Bucket website endpoint' link at the very bottom of the screen.
+
 ![alt text](<website endpoint.png>)
 
 
