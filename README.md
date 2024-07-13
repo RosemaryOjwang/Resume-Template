@@ -72,6 +72,22 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 ### Step 5: Create an Amazon CloudFront Distribution
 1. Search for and select 'CloudFront' from 'Services'.
 ![alt text](<CloudFront Nav.png>)
+2. Click 'Create distribution' to go to the 'Origin page.
+3. For 'Origin domain', click on the 'Use website endpoint'.
+4. For 'Origin access', choose 'Origin access control setting (Recommended).
+5. For 'Origin access control', select 'Create new OAC'.
+6. In the 'Create new OAC pane', leave everything as is and click on 'create'.   
+7. For 'Web Application Firewall (WAF)', select one of the options.
+8. Scroll down and click 'Create distribution'.   
+9. Click on 'Copy policy' in the 'S3 bucket policy needs to be updated' banner.
+10. In the same banner, click on the link to 'Go to S3 bucket permissions to update policy'.
+11. Click on 'Permissions'.
+12. For 'Bucket policy', click on the 'Edit' button.
+13. Paste the policy copied in step 9 in the 'Edit statement' field, and click on 'Save changes'.
+14. Return to the CloudFront console, review the 'Details' section for your new distribution. 'Last modified' field should display date and time once the distribution is done deploying.
+15. Record the domain name assigned to your distribution by CloudFront.
+
+![CloudFront Domain Name](<CloudFront Domain name.png>)
 
 #### Step 6: Test your website endpoint
 1. Click on 'Buckets' on the left side of your Amazon S3 console screen.
