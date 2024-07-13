@@ -62,5 +62,26 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 ```
 4. Choose 'Save changes'.
 
+### Step 4: Upload website content to S3
+1. While still in Amazon S3 console, select 'Buckets' on the left side of your screen.
+2. Click on the name of your bucket, in the buckets list that shows on the main section of your screen.
+3. Click on the 'Upload' button on the right side of your screen to upload your website's files/folders.
+4. Click on 'Add files' or 'Add folder', depending on what you have for your website, and select the respective file or folder for your website.
+5. Scroll down and click on 'Upload'.
+
+#### Step 5: Test your website endpoint
+1. Click on 'Buckets' on the left side of your Amazon S3 console screen.
+2. Click on the name of your bucket.
+3. Click on 'Properties'.
+4. Scroll down to 'Static website hosting' section and click on 'Bucket website endpoint' link at the very bottom of the screen.
+![alt text](<website endpoint.png>)
 
 
+## References
+[Tutorial: Configuring a static website on Amazon S3
+](https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html)
+
+## Licenses
+[MIT](https://opensource.org/license/mit)
+
+_Copyright (c) 2024._ **By Rosemary Ojwang**
