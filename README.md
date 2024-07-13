@@ -19,16 +19,48 @@ Amazon S3 is an object storage service by AWS that offers scalability, security,
 ### Step 1: Create a bucket
 1. Click on 'Create bucket'.
 2. Choose the Region where you want to create the bucket from.
-3. Enter the 'Bucket name'. 
-4. Scroll down and choose 'Create'.
+3. Enter the 'Bucket name'.
+4. Unselect 'Block all public access'. This will enable anyone on the internet to access the bucket with your resume.
+5. Scroll down and choose 'Create'.
 ![Create bucket](<Create Bucket.png>)
 
 ### Step 2: Enable static website hosting for your bucket
 
 1. Click on 'Buckets' on the left of your Amazon S3 Console window to access a list of your buckets.
-2. Click on the name of the bucket you created above.
+2. Click on the name of the bucket you created above, to view the bucket's details.
 3. Choose 'Properties'.
 4. Scroll down to 'Static website hosting' and choose 'Edit'.
 5. Under 'Static website hosting' choose 'Enable', and choose 'Save changes'.
 6. Under 'Index document', enter the name of the default page of your website: index.html
 7. Scroll down and choose 'Save changes'.
+![Enable static website hosting](<Enable static website hosting.png>)
+
+### Step 3: Add a bucket policy for public read access to the bucket's content
+1. While still in your bucket details view, choose 'Permission', just next to 'Properties'.
+2. Scroll down to 'Bucket policy' and Click on 'Edit'.
+3. Enter bucket policy in the Bucket policy editor (as is in the screenshot below) to grant public read access for your website.
+![alt text](<Bucket policy for public read access.png>)
+P.S: 'resume-bucket-ojwang' is the Bucket-Name.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
+```
+4. Choose 'Save changes'.
+
+
+
