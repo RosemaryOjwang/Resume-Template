@@ -69,7 +69,11 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 4. Click on 'Add files' or 'Add folder', depending on what you have for your website, and select the respective file or folder for your website.
 5. Scroll down and click on 'Upload'.
 
-#### Step 5: Test your website endpoint
+### Step 5: Create an Amazon CloudFront Distribution
+1. Search for and select 'CloudFront' from 'Services'.
+![alt text](<CloudFront Nav.png>)
+
+#### Step 6: Test your website endpoint
 1. Click on 'Buckets' on the left side of your Amazon S3 console screen.
 2. Click on the name of your bucket.
 3. Click on 'Properties'.
@@ -79,8 +83,10 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 
 
 ## References
-[Tutorial: Configuring a static website on Amazon S3
+- [Tutorial: Configuring a static website on Amazon S3
 ](https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html)
+
+- [Hosting HTML Pages Using AWS S3 and CloudFront: A Step-by-Step Tutorial](https://medium.com/@fabiokndt/hosting-html-pages-using-aws-s3-and-cloudfront-a-step-by-step-tutorial-8149476b11b4)
 
 ## Licenses
 [MIT](https://opensource.org/license/mit)
