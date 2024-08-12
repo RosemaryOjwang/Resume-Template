@@ -34,33 +34,6 @@ Amazon S3 is an object storage service by AWS that offers scalability, security,
 7. Scroll down and choose 'Save changes'.
 ![Enable static website hosting](<Enable static website hosting.png>)
 
-### Step 3: Add a bucket policy for public read access to the bucket's content
-1. While still in your bucket details view, choose 'Permission', just next to 'Properties'.
-2. Scroll down to 'Bucket policy' and Click on 'Edit'.
-3. Enter bucket policy in the Bucket policy editor (as is in the screenshot below) to grant public read access for your website.
-![alt text](<Bucket policy for public read access.png>)
-P.S: 'resume-bucket-ojwang' is the Bucket-Name.
-
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": [
-                "s3:GetObject"
-            ],
-            "Resource": [
-                "arn:aws:s3:::Bucket-Name/*"
-            ]
-        }
-    ]
-}
-```
-4. Choose 'Save changes'.
-
 ### Step 4: Upload website content to S3
 1. While still in Amazon S3 console, select 'Buckets' on the left side of your screen.
 2. Click on the name of your bucket, in the buckets list that shows on the main section of your screen.
