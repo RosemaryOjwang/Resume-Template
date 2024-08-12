@@ -34,14 +34,14 @@ Amazon S3 is an object storage service by AWS that offers scalability, security,
 7. Scroll down and choose 'Save changes'.
 ![Enable static website hosting](<Enable static website hosting.png>)
 
-### Step 4: Upload website content to S3
+### Step 3: Upload website content to S3
 1. While still in Amazon S3 console, select 'Buckets' on the left side of your screen.
 2. Click on the name of your bucket, in the buckets list that shows on the main section of your screen.
 3. Click on the 'Upload' button on the right side of your screen to upload your website's files/folders.
 4. Click on 'Add files' or 'Add folder', depending on what you have for your website, and select the respective file or folder for your website.
 5. Scroll down and click on 'Upload'.
 
-### Step 5: Create an Amazon CloudFront Distribution
+### Step 4: Create an Amazon CloudFront Distribution
 1. Search for and select 'CloudFront' from 'Services'.
 ![alt text](<CloudFront Nav.png>)
 2. Click 'Create distribution' to go to the 'Origin page.
@@ -61,7 +61,7 @@ Amazon S3 is an object storage service by AWS that offers scalability, security,
 
 ![CloudFront Domain Name](<CloudFront Domain name.png>)
 
-#### Step 6: Demo
+#### Step 5: Demo
 https://drb1id8xueecl.cloudfront.net/
 
 
