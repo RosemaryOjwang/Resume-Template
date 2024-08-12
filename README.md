@@ -20,8 +20,7 @@ Amazon S3 is an object storage service by AWS that offers scalability, security,
 1. Click on 'Create bucket'.
 2. Choose the Region where you want to create the bucket from.
 3. Enter the 'Bucket name'.
-4. Unselect 'Block all public access'. This will enable anyone on the internet to access the bucket with your resume.
-5. Scroll down and choose 'Create'.
+4. Scroll down and choose 'Create'.
 ![Create bucket](<Create Bucket.png>)
 
 ### Step 2: Enable static website hosting for your bucket
@@ -89,13 +88,9 @@ P.S: 'resume-bucket-ojwang' is the Bucket-Name.
 
 ![CloudFront Domain Name](<CloudFront Domain name.png>)
 
-#### Step 6: Test your website endpoint
-1. Click on 'Buckets' on the left side of your Amazon S3 console screen.
-2. Click on the name of your bucket.
-3. Click on 'Properties'.
-4. Scroll down to 'Static website hosting' section and click on 'Bucket website endpoint' link at the very bottom of the screen.
+#### Step 6: Demo
+https://drb1id8xueecl.cloudfront.net/
 
-![alt text](<website endpoint.png>)
 
 
 ## References
